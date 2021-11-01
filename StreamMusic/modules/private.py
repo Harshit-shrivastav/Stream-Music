@@ -38,15 +38,15 @@ def _start(client, message):
             [
                 [
                     InlineKeyboardButton(
-                        "➕ Add me to your Group 🙋‍♀️", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
+                        "➕ 𝐀𝐝𝐝 𝐦𝐞 𝐭𝐨 𝐲𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 🙋‍♀️", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
                 [
                     InlineKeyboardButton(
-                        "📲 Updates", url=f"https://t.me/{UPDATES_CHANNEL}"), 
+                        "👨‍💻 𝐎𝐰𝐧𝐞𝐫", url=f"https://t.me/army0071"), 
                     InlineKeyboardButton(
-                        "💬 Support", url=f"https://t.me/{SUPPORT_GROUP}")
+                        "💬 𝐒𝐮𝐩𝐩𝐨𝐫𝐭", url=f"https://t.me/{SUPPORT_GROUP}")
                 ],[
                     InlineKeyboardButton(
-                        "🛠 Source Code 🛠", url=f"https://{SOURCE_CODE}")
+                        "🔐 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 🔐", url=f"https://bit.ly/armybottelegram")
                 ]
             ]
         ),
@@ -56,13 +56,14 @@ def _start(client, message):
 @Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
     await message.reply_text(
-        f"""**🔴 {PROJECT_NAME} is online**""",
+        f"""🅷🅸 🆃🅷🅴🆁🅴, 🅰🆁🅼🆈 🅼🆄🆂🅸🅲 🅸🆂 🆁🆄🅽🅽🅸🅽🅶 🅽🅾🆆.""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "💬 Support Chat", url=f"https://t.me/{SUPPORT_GROUP}"
-                    )
+                        "💬 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐆𝐫𝐨𝐮𝐩", url=f"https://t.me/{SUPPORT_GROUP"),
+                    InlineKeyboardButton(
+                        "💬 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐆𝐫𝐨𝐮𝐩", url=f"https://t.me/{SUPPORT_GROUP}")
                 ]
             ]
         ),
@@ -101,10 +102,10 @@ def map(pos):
     elif(pos==len(tr.HELP_MSG)-1):
         url = f"https://t.me/{SUPPORT_GROUP}"
         button = [
-            [InlineKeyboardButton("➕ Add me to your Group 🙋‍♀️", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
-            [InlineKeyboardButton(text = '📲 Updates', url=f"https://t.me/{UPDATES_CHANNEL}"),
-             InlineKeyboardButton(text = '💬 Support', url=f"https://t.me/{SUPPORT_GROUP}")],
-            [InlineKeyboardButton(text = '🛠 Source Code 🛠', url=f"https://{SOURCE_CODE}")],
+            [InlineKeyboardButton("➕ 𝐀𝐝𝐝 𝐦𝐞 𝐭𝐨 𝐲𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 🙋‍♀️", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
+            [InlineKeyboardButton(text = '👨‍💻 𝐎𝐰𝐧𝐞𝐫', url=f"https://t.me/army0071"),
+             InlineKeyboardButton(text = '💬 𝐒𝐮𝐩𝐩𝐨𝐫𝐭', url=f"https://t.me/{SUPPORT_GROUP}")],
+            [InlineKeyboardButton(text = '🔐 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 🔐', url=f"https://bit.ly/armybottelegram")],
             [InlineKeyboardButton(text = '◀️', callback_data = f"help+{pos-1}")]
         ]
     else:
@@ -119,12 +120,12 @@ def map(pos):
 @Client.on_message(filters.command("help") & ~filters.private & ~filters.channel)
 async def ghelp(_, message: Message):
     await message.reply_text(
-        f"""**🙋‍♀️ Hello there! I can play music in the voice chats of telegram groups & channels.**""",
+        f"""**🙋‍♀️ 𝓗𝓮𝓵𝓵𝓸 𝓽𝓱𝓮𝓻𝓮! 𝓘 𝓬𝓪𝓷 𝓹𝓵𝓪𝔂 𝓶𝓾𝓼𝓲𝓬 𝓲𝓷 𝓽𝓱𝓮 𝓿𝓸𝓲𝓬𝓮 𝓬𝓱𝓪𝓽𝓼 𝓸𝓯 𝓽𝓮𝓵𝓮𝓰𝓻𝓪𝓶 𝓰𝓻𝓸𝓾𝓹𝓼 & 𝓬𝓱𝓪𝓷𝓷𝓮𝓵𝓼.**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🟡 Click here for help 🟡", url=f"https://t.me/{BOT_USERNAME}?start"
+                        "🟡 𝐂𝐥𝐢𝐜𝐤 𝐡𝐞𝐫𝐞 𝐟𝐨𝐫 𝐡𝐞𝐥𝐩 🟡", url=f"https://t.me/{BOT_USERNAME}?start"
                     )
                 ]
             ]
