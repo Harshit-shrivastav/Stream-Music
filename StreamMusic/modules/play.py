@@ -176,10 +176,10 @@ def updated_stats(chat, queue, vol=100):
         stats = "Settings of **{}**".format(chat.title)
         if len(que) > 0:
             stats += "\n\n"
-            stats += "Volume : {}%\n".format(vol)
-            stats += "Songs in queue : `{}`\n".format(len(que))
-            stats += "Now Playing : **{}**\n".format(queue[0][0])
-            stats += "Requested by : {}".format(queue[0][1].mention)
+            stats += "𝐕𝐨𝐥𝐮𝐦𝐞 : {}%\n".format(vol)
+            stats += "𝐒𝐨𝐧𝐠𝐬 𝐢𝐧 𝐪𝐮𝐞𝐮𝐞 : `{}`\n".format(len(que))
+            stats += "𝐍𝐨𝐰 𝐏𝐥𝐚𝐲𝐢𝐧𝐠 : **{}**\n".format(queue[0][0])
+            stats += "𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐛𝐲 : {}".format(queue[0][1].mention)
     else:
         stats = None
     return stats
@@ -238,7 +238,7 @@ async def settings(client, message):
         else:
             await message.reply(stats, reply_markup=r_ply("play"))
     else:
-        await message.reply("No VC instances running in this chat")
+        await message.reply("𝗡𝗼 𝗩𝗖 𝗶𝗻𝘀𝘁𝗮𝗻𝗰𝗲𝘀 𝗿𝘂𝗻𝗻𝗶𝗻𝗴 𝗶𝗻 𝘁𝗵𝗶𝘀 𝗰𝗵𝗮𝘁")
 
 
 @Client.on_message(
@@ -261,11 +261,11 @@ async def hfmm(_, message):
     if status == "ON" or status == "on" or status == "On":
         lel = await message.reply("`Processing...`")
         if not message.chat.id in DISABLED_GROUPS:
-            await lel.edit("Music Player Already Activated In This Chat")
+            await lel.edit("𝗠𝘂𝘀𝗶𝗰 𝗣𝗹𝗮𝘆𝗲𝗿 🎵 𝗶𝘀 𝗔𝗹𝗿𝗲𝗮𝗱𝘆 𝗔𝗰𝘁𝗶𝘃𝗮𝘁𝗲𝗱 𝗜𝗻 𝗧𝗵𝗶𝘀 𝗖𝗵𝗮𝘁 🗨️")
             return
         DISABLED_GROUPS.remove(message.chat.id)
         await lel.edit(
-            f"Music Player Successfully Enabled For Users In The Chat {message.chat.id}"
+            f"𝓜𝓾𝓼𝓲𝓬 𝓟𝓵𝓪𝔂𝓮𝓻 𝓢𝓾𝓬𝓬𝓮𝓼𝓼𝓯𝓾𝓵𝓵𝔂 𝓔𝓷𝓪𝓫𝓵𝓮𝓭 𝓕𝓸𝓻 𝓤𝓼𝓮𝓻𝓼 𝓘𝓷 𝓣𝓱𝓮 𝓒𝓱𝓪𝓽 {message.chat.id}"
         )
 
     elif status == "OFF" or status == "off" or status == "Off":
@@ -414,9 +414,9 @@ async def m_cb(b, cb):
                     InlineKeyboardButton("⏭", "skip"),
                 ],
                 [
-                    InlineKeyboardButton("Playlist 📖", "playlist"),
+                    InlineKeyboardButton("❰𝗣𝗹𝗮𝘆𝗹𝗶𝘀𝘁❱", "playlist"),
                 ],
-                [InlineKeyboardButton("❌ Close", "cls")],
+                [InlineKeyboardButton("❰𝗖𝗹𝗼𝘀𝗲❱", "cls")],
             ]
         )
         await cb.message.edit(stats, reply_markup=marr)
@@ -541,15 +541,15 @@ async def play(_, message: Message):
     if audio:
         if round(audio.duration / 60) > DURATION_LIMIT:
             raise DurationLimitError(
-                f"❌ Videos longer than {DURATION_LIMIT} minute(s) aren't allowed to play!"
+                f"❌ 𝗩𝗶𝗱𝗲𝗼𝘀 𝗹𝗼𝗻𝗴𝗲𝗿 𝘁𝗵𝗮𝗻 {DURATION_LIMIT} 𝗺𝗶𝗻𝘂𝘁𝗲(𝘀) 𝗮𝗿𝗲𝗻'𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱 𝘁𝗼 𝗽𝗹𝗮𝘆!"
             )
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("📖 Playlist", callback_data="playlist"),
-                    InlineKeyboardButton("Menu ⏯ ", callback_data="menu"),
+                    InlineKeyboardButton("❰𝗣𝗹𝗮𝘆𝗹𝗶𝘀𝘁❱", callback_data="playlist"),
+                    InlineKeyboardButton("❰𝗠𝗲𝗻𝘂 ⏯❱ ", callback_data="menu"),
                 ],
-                [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
+                [InlineKeyboardButton(text="❰𝗖𝗹𝗼𝘀𝗲❱", callback_data="cls")],
             ]
         )
         file_name = get_file_name(audio)
@@ -584,7 +584,7 @@ async def play(_, message: Message):
 
         except Exception as e:
             await lel.edit(
-                "Song not found.Try another song or maybe spell it properly."
+                "𝗦𝗼𝗻𝗴 🎵 𝗻𝗼𝘁 𝗳𝗼𝘂𝗻𝗱.𝗧𝗿𝘆 𝗮𝗻𝗼𝘁𝗵𝗲𝗿 𝘀𝗼𝗻𝗴 🎵 𝗼𝗿 𝗺𝗮𝘆𝗯𝗲 𝘀𝗽𝗲𝗹𝗹 ✍️ 𝗶𝘁 𝗽𝗿𝗼𝗽𝗲𝗿𝗹𝘆."
             )
             print(str(e))
             return
@@ -593,14 +593,14 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("📖 Playlist", callback_data="playlist"),
-                    InlineKeyboardButton("Menu ⏯ ", callback_data="menu"),
+                    InlineKeyboardButton("❰𝗣𝗹𝗮𝘆𝗹𝗶𝘀𝘁❱", callback_data="playlist"),
+                    InlineKeyboardButton("❰𝗠𝗲𝗻𝘂 ⏯❱", callback_data="menu"),
                 ],
                 [
-                    InlineKeyboardButton(text="🎬 YouTube", url=f"{url}"),
-                    InlineKeyboardButton(text="Download 📥", url=f"{dlurl}"),
+                    InlineKeyboardButton(text="❰𝗬𝗼𝘂𝘁𝘂𝗯𝗲❱", url=f"{url}"),
+                    InlineKeyboardButton(text="❰𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱❱", url=f"{dlurl}"),
                 ],
-                [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
+                [InlineKeyboardButton(text="❰𝗖𝗹𝗼𝘀𝗲❱", callback_data="cls")],
             ]
         )
         requested_by = message.from_user.first_name
@@ -676,14 +676,14 @@ async def play(_, message: Message):
             keyboard = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("📖 Playlist", callback_data="playlist"),
-                        InlineKeyboardButton("Menu ⏯ ", callback_data="menu"),
+                        InlineKeyboardButton("❰𝗣𝗹𝗮𝘆𝗹𝗶𝘀𝘁❱", callback_data="playlist"),
+                        InlineKeyboardButton("❰𝗠𝗲𝗻𝘂 ⏯❱", callback_data="menu"),
                     ],
                     [
-                        InlineKeyboardButton(text="🎬 YouTube", url=f"{url}"),
-                        InlineKeyboardButton(text="Download 📥", url=f"{dlurl}"),
+                        InlineKeyboardButton(text="❰𝗬𝗼𝘂𝘁𝘂𝗯𝗲❱", url=f"{url}"),
+                        InlineKeyboardButton(text="❰𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱❱", url=f"{dlurl}"),
                     ],
-                    [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
+                    [InlineKeyboardButton(text="❰𝗖𝗹𝗼𝘀𝗲❱", callback_data="cls")],
                 ]
             )
             requested_by = message.from_user.first_name
