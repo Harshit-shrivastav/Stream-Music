@@ -199,9 +199,9 @@ def r_ply(type_):
                 InlineKeyboardButton("⏭", "skip"),
             ],
             [
-                InlineKeyboardButton("Playlist 📖", "playlist"),
+                InlineKeyboardButton("❰𝗣𝗹𝗮𝘆𝗹𝗶𝘀𝘁❱", "playlist"),
             ],
-            [InlineKeyboardButton("❌ Close", "cls")],
+            [InlineKeyboardButton("❰𝗖𝗹𝗼𝘀𝗲❱", "cls")],
         ]
     )
     return mar
@@ -216,14 +216,14 @@ async def ee(client, message):
     if stats:
         await message.reply(stats)
     else:
-        await message.reply("No VC instances running in this chat")
+        await message.reply("ɴᴏ 🎧 ᴠᴄ ɪɴꜱᴛᴀɴᴄᴇꜱ 🏃 ʀᴜɴɴɪɴɢ ɪɴ ᴛʜɪꜱ 🗨️ ᴄʜᴀᴛ")
 
 
 @Client.on_message(filters.command("player") & filters.group & ~filters.edited)
 @authorized_users_only
 async def settings(client, message):
     if message.chat.id in DISABLED_GROUPS:
-        await message.reply("Music Player is Disabled")
+        await message.reply("𝑀𝓊𝓈𝒾𝒸 𝒫𝓁𝒶𝓎𝑒𝓇 𝒾𝓈 𝒟𝒾𝓈𝒶𝒷𝓁𝑒𝒹")
         return    
     playing = None
     chat_id = get_chat_id(message.chat)
