@@ -50,7 +50,7 @@ def song(client, message):
     for i in message.command[1:]:
         query += " " + str(i)
     print(query)
-    m = message.reply("🔎 𝔽𝕚𝕟𝕕𝕚𝕟𝕘 𝕥𝕙𝕖 𝕤𝕠𝕟𝕘...")
+    m = message.reply("𝐅𝐢𝐧𝐝𝐢𝐧𝐠 💫 𝐓𝐡𝐞 𝐒𝐨𝐧𝐠 🎧 𝐅𝐫𝐨𝐦 𝗔𝗿𝗺𝘆 ❤️ 𝐒𝐞𝐫𝐯𝐞𝐫 🌎...")
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -67,16 +67,16 @@ def song(client, message):
         results[0]["views"]
 
     except Exception as e:
-        m.edit("❌ Found Nothing.\n\nTry another keywork or maybe spell it properly.")
+        m.edit("𝐒𝐨𝐧𝐠 🥀 𝐍𝐨𝐭 😔 𝐅𝐨𝐮𝐧𝐝.")
         print(str(e))
         return
-    m.edit("𝔻𝕠𝕨𝕟𝕝𝕠𝕒𝕕𝕚𝕟𝕘 𝕥𝕙𝕖 𝕤𝕠𝕟𝕘")
+    m.edit("𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 ✨ 𝐒𝐨𝐧𝐠 🎸 𝐅𝐫𝐨𝐦 𝗔𝗿𝗺𝘆 🥀 𝐒𝐞𝐫𝐯𝐞𝐫 🌎...")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = "**🎵 𝕌𝕡𝕝𝕠𝕒𝕕𝕖𝕕 𝕓𝕪 @SDBOTsz**"
+        rep = "🎵 𝐔𝐩𝐥𝐨𝐚𝐝𝐞𝐝 𝐁𝐲 :- ✨ @Army_musicbot ❤️"
         secmul, dur, dur_arr = 1, 0, duration.split(":")
         for i in range(len(dur_arr) - 1, -1, -1):
             dur += int(dur_arr[i]) * secmul
@@ -91,7 +91,7 @@ def song(client, message):
         )
         m.delete()
     except Exception as e:
-        m.edit("❌ Error")
+        m.edit("𝐘𝐨𝐮𝐭𝐮𝐛𝐞  𝐄𝐫𝐫𝐨𝐫 ❌ 𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐎𝐰𝐧𝐞𝐫 🥀 @army0071 ❤️")
         print(e)
 
     try:
@@ -272,7 +272,7 @@ async def jssong(_, message):
         return
     if is_downloading:
         await message.reply_text(
-            "Another download is in progress, try again after sometime."
+            "𝗔𝗻𝗼𝘁𝗵𝗲𝗿 𝗱𝗼𝘄𝗻𝗹𝗼𝗮𝗱 ⬇️ 𝗶𝘀 𝗶𝗻 𝗽𝗿𝗼𝗴𝗿𝗲𝘀𝘀 🔁, 𝘁𝗿𝘆 𝗮𝗴𝗮𝗶𝗻 𝗮𝗳𝘁𝗲𝗿 𝘀𝗼𝗺𝗲𝘁𝗶𝗺𝗲."
         )
         return
     is_downloading = True
@@ -287,9 +287,9 @@ async def jssong(_, message):
         sname = songs.result[0].song
         slink = songs.result[0].media_url
         ssingers = songs.result[0].singers
-        await m.edit("Downloading")
+        await m.edit("𝘿𝙤𝙬𝙣𝙡𝙤𝙖𝙙𝙞𝙣𝙜...")
         song = await download_song(slink)
-        await m.edit("Uploading")
+        await m.edit("𝗨𝗽𝗹𝗼𝗮𝗱𝗶𝗻𝗴...")
         await message.reply_audio(audio=song, title=sname, performer=ssingers)
         os.remove(song)
         await m.delete()
@@ -311,7 +311,7 @@ async def deezsong(_, message):
         return
     if is_downloading:
         await message.reply_text(
-            "Another download is in progress, try again after sometime."
+            "𝗔𝗻𝗼𝘁𝗵𝗲𝗿 𝗱𝗼𝘄𝗻𝗹𝗼𝗮𝗱 ⬇️ 𝗶𝘀 𝗶𝗻 𝗽𝗿𝗼𝗴𝗿𝗲𝘀𝘀 🔁, 𝘁𝗿𝘆 𝗮𝗴𝗮𝗶𝗻 𝗮𝗳𝘁𝗲𝗿 𝘀𝗼𝗺𝗲𝘁𝗶𝗺𝗲."
         )
         return
     is_downloading = True
@@ -344,7 +344,7 @@ async def ytmusic(client, message: Message):
     global is_downloading
     if is_downloading:
         await message.reply_text(
-            "Another download is in progress, try again after sometime."
+            "𝗔𝗻𝗼𝘁𝗵𝗲𝗿 𝗱𝗼𝘄𝗻𝗹𝗼𝗮𝗱 ⬇️ 𝗶𝘀 𝗶𝗻 𝗽𝗿𝗼𝗴𝗿𝗲𝘀𝘀 🔁, 𝘁𝗿𝘆 𝗮𝗴𝗮𝗶𝗻 𝗮𝗳𝘁𝗲𝗿 𝘀𝗼𝗺𝗲𝘁𝗶𝗺𝗲."
         )
         return
 
@@ -354,7 +354,7 @@ async def ytmusic(client, message: Message):
         message.chat.id, f"`Getting {urlissed} From Youtube Servers. Please Wait.`"
     )
     if not urlissed:
-        await pablo.edit("Invalid Command Syntax, Please Check Help Menu To Know More!")
+        await pablo.edit("𝗜𝗻𝘃𝗮𝗹𝗶𝗱 ❌ 𝗖𝗼𝗺𝗺𝗮𝗻𝗱 𝗦𝘆𝗻𝘁𝗮𝘅, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗖𝗵𝗲𝗰𝗸 𝗛𝗲𝗹𝗽📙 𝗠𝗲𝗻𝘂 𝗧𝗼 𝗞𝗻𝗼𝘄 𝗠𝗼𝗿𝗲!")
         return
 
     search = SearchVideos(f"{urlissed}", offset=1, mode="dict", max_results=1)
@@ -388,7 +388,7 @@ async def ytmusic(client, message: Message):
 
             if duration > DURATION_LIMIT:
                 await pablo.edit(
-                    f"❌ Videos longer than {DURATION_LIMIT} minute(s) aren't allowed, the provided video is {duration} minute(s)"
+                    f"❌ 𝗩𝗶𝗱𝗲𝗼𝘀 𝗹𝗼𝗻𝗴𝗲𝗿 𝘁𝗵𝗮𝗻 {DURATION_LIMIT} 𝗺𝗶𝗻𝘂𝘁𝗲(𝘀) 𝗮𝗿𝗲𝗻'𝘁 ❌ 𝗮𝗹𝗹𝗼𝘄𝗲𝗱, 𝘁𝗵𝗲 𝗽𝗿𝗼𝘃𝗶𝗱𝗲𝗱 𝘃𝗶𝗱𝗲𝗼 📺 𝗶𝘀 {duration} 𝗺𝗶𝗻𝘂𝘁𝗲(𝘀)"
                 )
                 is_downloading = False
                 return
@@ -414,7 +414,7 @@ async def ytmusic(client, message: Message):
         progress_args=(
             pablo,
             c_time,
-            f"`Uploading {urlissed} Song From YouTube Music!`",
+            f"`𝙐𝙥𝙡𝙤𝙖𝙙𝙞𝙣𝙜 {urlissed} 𝙎𝙤𝙣𝙜 𝙁𝙧𝙤𝙢 𝙔𝙤𝙪𝙏𝙪𝙗𝙚 𝙈𝙪𝙨𝙞𝙘!`",
             file_stark,
         ),
     )
