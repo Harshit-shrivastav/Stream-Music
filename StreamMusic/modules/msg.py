@@ -21,15 +21,15 @@ from StreamMusic.config import PROJECT_NAME
 from StreamMusic.config import SUPPORT_GROUP
 from StreamMusic.config import UPDATES_CHANNEL
 class Messages():
-      START_MSG = "**Hello 👋 [{}](tg://user?id={})!**\n\n🤖 I am an advanced bot created for playing music in the voice chats of Telegram Groups & Channels.\n\n✅ Send me /help for more info."
+      START_MSG = "**Hello 👋 [{}](tg://user?id={})!**\n\n𝗜 𝗮𝗺 𝗔𝗿𝗺𝘆 🎖️ 𝗠𝘂𝘀𝗶𝗰 𝗯𝗼𝘁 🤖 𝗰𝗿𝗲𝗮𝘁𝗲𝗱 𝗳𝗼𝗿 𝗽𝗹𝗮𝘆𝗶𝗻𝗴 𝗺𝘂𝘀𝗶𝗰 🎵 𝗶𝗻 𝘁𝗵𝗲 𝘃𝗼𝗶𝗰𝗲 🔉 𝗰𝗵𝗮𝘁𝘀 𝗼𝗳 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺 𝗚𝗿𝗼𝘂𝗽𝘀 & 𝗖𝗵𝗮𝗻𝗻𝗲𝗹𝘀.✌️\n\n 𝗦𝗲𝗻𝗱 𝗺𝗲 /help 𝗳𝗼𝗿 𝗺𝗼𝗿𝗲 𝗶𝗻𝗳𝗼."
       HELP_MSG = [
         ".",
 f"""
-**Hey 👋 Welcome back to {PROJECT_NAME}
+𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 𝗵𝗲𝗹𝗽 𝗽𝗮𝗻𝗻𝗲𝗹 𝗼𝗳 𝗮𝗿𝗺𝘆 𝗺𝘂𝘀𝗶𝗰
 
-⚪️ {PROJECT_NAME} can play music in your group's voice chat as well as channel voice chats
+🤟𝘼𝙧𝙢𝙮 𝙘𝙖𝙣 𝙥𝙡𝙖𝙮 𝙢𝙪𝙨𝙞𝙘 𝙞𝙣 𝙮𝙤𝙪𝙧 𝙜𝙧𝙤𝙪𝙥'𝙨 𝙫𝙤𝙞𝙘𝙚 𝙘𝙝𝙖𝙩 𝙖𝙨 𝙬𝙚𝙡𝙡 𝙖𝙨 𝙘𝙝𝙖𝙣𝙣𝙚𝙡 𝙫𝙤𝙞𝙘𝙚 𝙘𝙝𝙖𝙩𝙨
 
-⚪️ Assistant name >> @{ASSISTANT_NAME}\n\nClick next for instructions**
+🤟𝘼𝙨𝙨𝙞𝙨𝙩𝙖𝙣𝙩 𝙣𝙖𝙢𝙚 >> @{ASSISTANT_NAME}\n\n𝘾𝙡𝙞𝙘𝙠 𝙣𝙚𝙭𝙩 𝙛𝙤𝙧 𝙞𝙣𝙨𝙩𝙧𝙪𝙘𝙩𝙞𝙤𝙣𝙨
 """,
 
 f"""
