@@ -38,15 +38,15 @@ def _start(client, message):
             [
                 [
                     InlineKeyboardButton(
-                        "➕ 𝐀𝐝𝐝 𝐦𝐞 𝐭𝐨 𝐲𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 🙋‍♀️", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
+                        "❰𝗔𝗱𝗱 𝗺𝗲 𝘁𝗼 𝘆𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽❱", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
                 [
                     InlineKeyboardButton(
-                        "👨‍💻 𝐎𝐰𝐧𝐞𝐫", url=f"https://t.me/army0071"), 
+                        "❰𝗢𝘄𝗻𝗲𝗿❱", url=f"https://t.me/army0071"), 
                     InlineKeyboardButton(
-                        "💬 𝐒𝐮𝐩𝐩𝐨𝐫𝐭", url=f"https://t.me/{SUPPORT_GROUP}")
+                        "❰𝗚𝗿𝗼𝘂𝗽❱", url=f"https://t.me/{SUPPORT_GROUP}")
                 ],[
                     InlineKeyboardButton(
-                        "🔐 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 🔐", url=f"https://bit.ly/armybottelegram")
+                        "❰𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀❱", url=f"https://bit.ly/armybottelegram")
                 ]
             ]
         ),
@@ -56,14 +56,14 @@ def _start(client, message):
 @Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
     await message.reply_text(
-        f"""🅷🅸 🆃🅷🅴🆁🅴, 🅰🆁🅼🆈 🅼🆄🆂🅸🅲 🅸🆂 🆁🆄🅽🅽🅸🅽🅶 🅽🅾🆆.""",
+        f"""🅷🅸, 🅰🆁🅼🆈 🅼🆄🆂🅸🅲 🅸🆂 🆁🆄🅽🅽🅸🅽🅶 🅽🅾🆆.""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "👨‍💻 𝐎𝐰𝐧𝐞𝐫", url=f"https://t.me/army0071"),
+                        "❰𝗢𝘄𝗻𝗲𝗿❱", url=f"https://t.me/army0071"),
                     InlineKeyboardButton(
-                        "💬 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐆𝐫𝐨𝐮𝐩", url=f"https://t.me/{SUPPORT_GROUP}")
+                        "❰𝗚𝗿𝗼𝘂𝗽❱", url=f"https://t.me/{SUPPORT_GROUP}")
                 ]
             ]
         ),
