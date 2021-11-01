@@ -102,10 +102,10 @@ def map(pos):
     elif(pos==len(tr.HELP_MSG)-1):
         url = f"https://t.me/{SUPPORT_GROUP}"
         button = [
-            [InlineKeyboardButton("➕ 𝐀𝐝𝐝 𝐦𝐞 𝐭𝐨 𝐲𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 🙋‍♀️", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
-            [InlineKeyboardButton(text = '👨‍💻 𝐎𝐰𝐧𝐞𝐫', url=f"https://t.me/army0071"),
-             InlineKeyboardButton(text = '💬 𝐒𝐮𝐩𝐩𝐨𝐫𝐭', url=f"https://t.me/{SUPPORT_GROUP}")],
-            [InlineKeyboardButton(text = '🔐 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 🔐', url=f"https://bit.ly/armybottelegram")],
+            [InlineKeyboardButton("❰𝗔𝗱𝗱 𝗺𝗲 𝘁𝗼 𝘆𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽❱", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
+            [InlineKeyboardButton(text = '❰𝗢𝘄𝗻𝗲𝗿❱', url=f"https://t.me/army0071"),
+             InlineKeyboardButton(text = '❰𝗚𝗿𝗼𝘂𝗽❱', url=f"https://t.me/{SUPPORT_GROUP}")],
+            [InlineKeyboardButton(text = '❰𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀❱', url=f"https://bit.ly/armybottelegram")],
             [InlineKeyboardButton(text = '◀️', callback_data = f"help+{pos-1}")]
         ]
     else:
@@ -125,7 +125,7 @@ async def ghelp(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🟡 𝐂𝐥𝐢𝐜𝐤 𝐡𝐞𝐫𝐞 𝐟𝐨𝐫 𝐡𝐞𝐥𝐩 🟡", url=f"https://t.me/{BOT_USERNAME}?start"
+                        "❰𝗖𝗹𝗶𝗰𝗸 𝗵𝗲𝗿𝗲 𝗳𝗼𝗿 𝗵𝗲𝗹𝗽❱", url=f"https://t.me/{BOT_USERNAME}?start"
                     )
                 ]
             ]
