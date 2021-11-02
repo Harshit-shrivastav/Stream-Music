@@ -91,7 +91,7 @@ def song(client, message):
         )
         m.delete()
     except Exception as e:
-        m.edit("𝐘𝐨𝐮𝐭𝐮𝐛𝐞  𝐄𝐫𝐫𝐨𝐫 ❌ 𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐎𝐰𝐧𝐞𝐫 🥀 @ehsaasmusic_bot ❤️")
+        m.edit("𝐘𝐨𝐮𝐭𝐮𝐛𝐞  𝐄𝐫𝐫𝐨𝐫 ❌ 𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐎𝐰𝐧𝐞𝐫 🥀 army0071 ❤️")
         print(e)
 
     try:
