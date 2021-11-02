@@ -21,13 +21,13 @@ from StreamMusic.config import PROJECT_NAME
 from StreamMusic.config import SUPPORT_GROUP
 from StreamMusic.config import UPDATES_CHANNEL
 class Messages():
-      START_MSG = "**Hey,  👋 [{}](tg://user?id={})!**\n\n🤖 I'm ᴀʀᴍʏ Music 🎀 I Cᴀɴ Pʟᴀʏ Mᴜsɪᴄ Iɴ Yᴏᴜʀ Gʀᴏᴜᴩ Vᴏɪᴄᴇ Cʜᴀᴛ..\n\n ☺️ Send me /help for more info."
+      START_MSG = "**Hey,  👋 [{}](tg://user?id={})!**\n\n🤖 I'm 𝗘𝗵𝘀𝗮𝗮𝗵 Music 🎀 I Cᴀɴ Pʟᴀʏ Mᴜsɪᴄ Iɴ Yᴏᴜʀ Gʀᴏᴜᴩ Vᴏɪᴄᴇ Cʜᴀᴛ..\n\n ☺️ Send me /help for more info."
       HELP_MSG = [
         ".",
 f"""
 𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 𝗵𝗲𝗹𝗽 𝗽𝗮𝗻𝗻𝗲𝗹 𝗼𝗳 𝗮𝗿𝗺𝘆 𝗺𝘂𝘀𝗶𝗰
 
-🤟𝘼𝙧𝙢𝙮 𝙘𝙖𝙣 𝙥𝙡𝙖𝙮 𝙢𝙪𝙨𝙞𝙘 𝙞𝙣 𝙮𝙤𝙪𝙧 𝙜𝙧𝙤𝙪𝙥'𝙨 𝙫𝙤𝙞𝙘𝙚 𝙘𝙝𝙖𝙩 𝙖𝙨 𝙬𝙚𝙡𝙡 𝙖𝙨 𝙘𝙝𝙖𝙣𝙣𝙚𝙡 𝙫𝙤𝙞𝙘𝙚 𝙘𝙝𝙖𝙩𝙨
+🤟𝙀𝙝𝙨𝙖𝙖𝙝 𝙘𝙖𝙣 𝙥𝙡𝙖𝙮 𝙢𝙪𝙨𝙞𝙘 𝙞𝙣 𝙮𝙤𝙪𝙧 𝙜𝙧𝙤𝙪𝙥'𝙨 𝙫𝙤𝙞𝙘𝙚 𝙘𝙝𝙖𝙩 𝙖𝙨 𝙬𝙚𝙡𝙡 𝙖𝙨 𝙘𝙝𝙖𝙣𝙣𝙚𝙡 𝙫𝙤𝙞𝙘𝙚 𝙘𝙝𝙖𝙩𝙨
 
 🤟𝘼𝙨𝙨𝙞𝙨𝙩𝙖𝙣𝙩 𝙣𝙖𝙢𝙚 >> @{ASSISTANT_NAME}\n\n𝘾𝙡𝙞𝙘𝙠 𝙣𝙚𝙭𝙩 𝙛𝙤𝙧 𝙞𝙣𝙨𝙩𝙧𝙪𝙘𝙩𝙞𝙤𝙣𝙨
 """,
