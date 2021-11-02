@@ -597,8 +597,8 @@ async def play(_, message: Message):
                     InlineKeyboardButton("❰𝗠𝗲𝗻𝘂 ⏯❱", callback_data="menu"),
                 ],
                 [
-                    InlineKeyboardButton(text="❰𝕺𝖜𝖓𝖊𝖗❱", url=f"https://t.me/army0071"),
-                    InlineKeyboardButton(text="❰𝕲𝖗𝖔𝖚𝖕❱", url=f"https://t.me/Worldwide_friends_chatting_zonee"),
+                    InlineKeyboardButton(text="❰𝗢𝘄𝗻𝗲𝗿❱", url=f"https://t.me/army0071"),
+                    InlineKeyboardButton(text="❰𝗚𝗿𝗼𝘂𝗽❱", url=f"https://t.me/Worldwide_friends_chatting_zonee"),
                 ],
                 [InlineKeyboardButton(text="❰𝗖𝗹𝗼𝘀𝗲❱", callback_data="cls")],
             ]
@@ -680,8 +680,8 @@ async def play(_, message: Message):
                         InlineKeyboardButton("❰𝗠𝗲𝗻𝘂 ⏯❱", callback_data="menu"),
                     ],
                     [
-                        InlineKeyboardButton(text="❰𝕺𝖜𝖓𝖊𝖗❱", url=f"https://t.me/army0071"),
-                        InlineKeyboardButton(text="❰𝕲𝖗𝖔𝖚𝖕❱", url=f"https://t.me/Worldwide_friends_chatting_zonee"),
+                        InlineKeyboardButton(text="❰𝗢𝘄𝗻𝗲𝗿❱", url=f"https://t.me/army0071"),
+                        InlineKeyboardButton(text="❰𝗚𝗿𝗼𝘂𝗽❱", url=f"https://t.me/Worldwide_friends_chatting_zonee"),
                     ],
                     [InlineKeyboardButton(text="❰𝗖𝗹𝗼𝘀𝗲❱", callback_data="cls")],
                 ]
@@ -828,8 +828,8 @@ async def ytplay(_, message: Message):
                 InlineKeyboardButton("❰𝗠𝗲𝗻𝘂 ⏯❱", callback_data="menu"),
             ],
             [
-                InlineKeyboardButton(text="❰𝕺𝖜𝖓𝖊𝖗❱", url=f"https://t.me/army0071"),
-                InlineKeyboardButton(text="❰𝕲𝖗𝖔𝖚𝖕❱", url=f"https://t.me/Worldwide_friends_chatting_zonee"),
+                InlineKeyboardButton(text="❰𝗢𝘄𝗻𝗲𝗿❱", url=f"https://t.me/army0071"),
+                InlineKeyboardButton(text="❰𝗚𝗿𝗼𝘂𝗽❱", url=f"https://t.me/Worldwide_friends_chatting_zonee"),
             ],
             [InlineKeyboardButton(text="❰𝗖𝗹𝗼𝘀𝗲❱", callback_data="cls")],
         ]
@@ -1213,7 +1213,7 @@ async def lol_cb(b, cb):
                 InlineKeyboardButton("❰𝗠𝗲𝗻𝘂 ⏯❱", callback_data="menu"),
             ],
             [
-                InlineKeyboardButton(text="❰𝕺𝖜𝖓𝖊𝖗❱", url=f"https://t.me/army0071"),
+                InlineKeyboardButton(text="❰𝗢𝘄𝗻𝗲𝗿❱", url=f"https://t.me/army0071"),
                 InlineKeyboardButton(text="❰𝕲𝖗𝖔𝖚𝖕❱", url=f"https://t.me/Worldwide_friends_chatting_zonee"),
             ],
             [InlineKeyboardButton(text="❰𝗖𝗹𝗼𝘀𝗲❱", callback_data="cls")],
