@@ -152,9 +152,9 @@ async def playlist(client, message):
         temp.append(t)
     now_playing = temp[0][0]
     by = temp[0][1].mention(style="md")
-    msg = "**Now Playing** in {}".format(message.chat.title)
+    msg = "𝐍𝐨𝐰 𝐩𝐥𝐚𝐲𝐢𝐧𝐠 🎵 𝐢𝐧 **{}**".format(message.chat.title)
     msg += "\n- " + now_playing
-    msg += "\n- Req by " + by
+    msg += "\n- 𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐛𝐲 " + by
     temp.pop(0)
     if temp:
         msg += "\n\n"
@@ -162,8 +162,8 @@ async def playlist(client, message):
         for song in temp:
             name = song[0]
             usr = song[1].mention(style="md")
-            msg += f"\n- {name}"
-            msg += f"\n- Req by {usr}\n"
+            msg += f"\n- **{name}**"
+            msg += f"\n- 𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐛𝐲 {usr}\n"
     await message.reply_text(msg)
 
 
@@ -301,9 +301,9 @@ async def p_cb(b, cb):
             temp.append(t)
         now_playing = temp[0][0]
         by = temp[0][1].mention(style="md")
-        msg = "**Now Playing** in {}".format(cb.message.chat.title)
+        msg = "**𝐍𝐨𝐰 𝐩𝐥𝐚𝐲𝐢𝐧𝐠 𝐢𝐧** {}".format(cb.message.chat.title)
         msg += "\n- " + now_playing
-        msg += "\n- Req by " + by
+        msg += "\n- 𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐛𝐲 " + by
         temp.pop(0)
         if temp:
             msg += "\n\n"
@@ -311,8 +311,8 @@ async def p_cb(b, cb):
             for song in temp:
                 name = song[0]
                 usr = song[1].mention(style="md")
-                msg += f"\n- {name}"
-                msg += f"\n- Req by {usr}\n"
+                msg += f"\n- **{name}**"
+                msg += f"\n- 𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐛𝐲 {usr}\n"
         await cb.message.edit(msg)
 
 
@@ -368,9 +368,9 @@ async def m_cb(b, cb):
             temp.append(t)
         now_playing = temp[0][0]
         by = temp[0][1].mention(style="md")
-        msg = "**Now Playing** in {}".format(cb.message.chat.title)
+        msg = "**𝐍𝐨𝐰 𝐩𝐥𝐚𝐲𝐢𝐧𝐠 𝐢𝐧** {}".format(cb.message.chat.title)
         msg += "\n- " + now_playing
-        msg += "\n- Req by " + by
+        msg += "\n- 𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐛𝐲 " + by
         temp.pop(0)
         if temp:
             msg += "\n\n"
@@ -378,8 +378,8 @@ async def m_cb(b, cb):
             for song in temp:
                 name = song[0]
                 usr = song[1].mention(style="md")
-                msg += f"\n- {name}"
-                msg += f"\n- Req by {usr}\n"
+                msg += f"\n- **{name}**"
+                msg += f"\n- 𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐛𝐲 **{usr}**\n"
         await cb.message.edit(msg)
 
     elif type_ == "resume":
@@ -554,7 +554,7 @@ async def play(_, message: Message):
         )
         file_name = get_file_name(audio)
         title = file_name
-        thumb_name = "https://telegra.ph/file/c9b3eeeef7d32593caca6.jpg"
+        thumb_name = "https://toppng.com/uploads/preview/and-blank-effect-transparent-11546868080xgtiz6hxid.png"
         thumbnail = thumb_name
         duration = round(audio.duration / 60)
         views = "Locally added"
@@ -700,7 +700,7 @@ async def play(_, message: Message):
         qeue.append(appendable)
         await message.reply_photo(
             photo="final.png",
-            caption=f"#⃣ 𝗬𝗼𝘂𝗿 𝗿𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝘀𝗼𝗻𝗴 🎵 **queued** 𝙖𝙩 𝙥𝙤𝙨𝙞𝙩𝙞𝙤𝙣 ☺️ {position}!",
+            caption=f" 𝗬𝗼𝘂𝗿 𝗿𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝘀𝗼𝗻𝗴 🎵 **queued** 𝙖𝙩 𝙥𝙤𝙨𝙞𝙩𝙞𝙤𝙣 ☺️ {position}!",
             reply_markup=keyboard,
         )
         os.remove("final.png")
@@ -848,7 +848,7 @@ async def ytplay(_, message: Message):
         qeue.append(appendable)
         await message.reply_photo(
             photo="final.png",
-            caption=f"#⃣ 𝗬𝗼𝘂𝗿 𝗿𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝘀𝗼𝗻𝗴 🎵  **queued**  𝙖𝙩 𝙥𝙤𝙨𝙞𝙩𝙞𝙤𝙣 ☺️ {position}!",
+            caption=f"𝗬𝗼𝘂𝗿 𝗿𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝘀𝗼𝗻𝗴 🎵  **queued**  𝙖𝙩 𝙥𝙤𝙨𝙞𝙩𝙞𝙤𝙣 ☺️ {position}!",
             reply_markup=keyboard,
         )
         os.remove("final.png")
@@ -951,7 +951,7 @@ async def deezer(client: Client, message_: Message):
         url = songs.result[0].url
         artist = songs.result[0].artist
         duration = songs.result[0].duration
-        thumbnail = "https://telegra.ph/file/f3f7e2c4447bf96d4ea45.jpg"
+        thumbnail = "https://toppng.com/uploads/preview/and-blank-effect-transparent-11546868080xgtiz6hxid.png"
 
     except:
         await res.edit("🌸𝗦𝗼𝗻𝗴 𝗡𝗼𝘁 𝗙𝗼𝘂𝗻𝗱 ✌ 𝗦𝗽𝗲𝗹𝗹𝗶𝗻𝗴 𝗣𝗿𝗼𝗯𝗹𝗲𝗺")
@@ -1175,7 +1175,7 @@ async def lol_cb(b, cb):
     if cb.from_user.id != useer_id:
         await cb.answer("You ain't the person who requested to play the song!", show_alert=True)
         return
-    await cb.message.edit("Hang On... Player Starting")
+    await cb.message.edit("𝐏𝐥𝐞𝐚𝐬𝐞 𝐰𝐚𝐢𝐭 🌀... 𝐏𝐥𝐚𝐲𝐞𝐫 𝐬𝐭𝐚𝐫𝐭𝐢𝐧𝐠 📺...")
     x=int(x)
     try:
         useer_name = cb.message.reply_to_message.from_user.first_name
@@ -1236,9 +1236,9 @@ async def lol_cb(b, cb):
         await cb.message.delete()
         await b.send_photo(chat_id,
             photo="final.png",
-            caption=f"#⃣ 𝗿𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝘀𝗼𝗻𝗴 🎵  **by** {r_by.mention} **queued**  𝙖𝙩 𝙥𝙤𝙨𝙞𝙩𝙞𝙤𝙣 ☺️ {position}!",
+            caption=f"𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 🌷 𝐬𝐨𝐧𝐠 🎵 𝐛𝐲  **{}** 𝐪𝐮𝐞𝐮𝐞𝐝 🌀 𝐚𝐭 𝐩𝐨𝐬𝐢𝐭𝐢𝐨𝐧 ☺️.",
             reply_markup=keyboard,
-        )
+        )r_by.mention
         os.remove("final.png")
         
     else:
