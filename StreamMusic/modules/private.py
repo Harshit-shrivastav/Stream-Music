@@ -41,7 +41,7 @@ def _start(client, message):
                         "❰𝗔𝗱𝗱 𝗺𝗲 𝘁𝗼 𝘆𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽❱", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
                 [
                     InlineKeyboardButton(
-                        "❰𝗢𝘄𝗻𝗲𝗿❱", url=f"https://t.me/army0071"), 
+                        "❰𝗢𝘄𝗻𝗲𝗿❱", url=f"https://t.me/ehsaasmusic_bot"), 
                     InlineKeyboardButton(
                         "❰𝗚𝗿𝗼𝘂𝗽❱", url=f"https://t.me/{SUPPORT_GROUP}")
                 ],[
@@ -56,7 +56,7 @@ def _start(client, message):
 @Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
     await message.reply_text(
-        f"""🅷🅸, 🅰🆁🅼🆈 🅼🆄🆂🅸🅲 🅸🆂 🆁🆄🅽🅽🅸🅽🅶 🅽🅾🆆.""",
+        f"""🅷🅸, 🅴🅷🆂🅰🅰🅷 🅼🆄🆂🅸🅲 🅸🆂 🆁🆄🅽🅽🅸🅽🅶 🅽🅾🆆.""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
