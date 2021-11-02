@@ -514,7 +514,7 @@ async def play(_, message: Message):
         )
         return
     text_links=None
-    await lel.edit("𝐅𝐢𝐧𝐝𝐢𝐧𝐠 💫 𝐓𝐡𝐞 𝐒𝐨𝐧𝐠 🎧 𝐅𝐫𝐨𝐦 𝗔𝗿𝗺𝘆 ❤️ 𝐒𝐞𝐫𝐯𝐞𝐫 🌎...'")
+    await lel.edit("𝐅𝐢𝐧𝐝𝐢𝐧𝐠 💫 𝐓𝐡𝐞 𝐒𝐨𝐧𝐠 🎧 𝐅𝐫𝐨𝐦 𝗘𝗵𝘀𝗮𝗮𝘀 ❤️ 𝐒𝐞𝐫𝐯𝐞𝐫 🌎...'")
     if message.reply_to_message:
         entities = []
         toxt = message.reply_to_message.text or message.reply_to_message.caption
@@ -1214,7 +1214,7 @@ async def lol_cb(b, cb):
             ],
             [
                 InlineKeyboardButton(text="❰𝗢𝘄𝗻𝗲𝗿❱", url=f"https://t.me/army0071"),
-                InlineKeyboardButton(text="❰𝕲𝖗𝖔𝖚𝖕❱", url=f"https://t.me/Worldwide_friends_chatting_zonee"),
+                InlineKeyboardButton(text="❰𝗴𝗿𝗼𝘂𝗽❱", url=f"https://t.me/Worldwide_friends_chatting_zonee"),
             ],
             [InlineKeyboardButton(text="❰𝗖𝗹𝗼𝘀𝗲❱", callback_data="cls")],
         ]
