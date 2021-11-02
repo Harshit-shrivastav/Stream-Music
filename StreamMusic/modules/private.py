@@ -46,7 +46,7 @@ def _start(client, message):
                         "❰𝗚𝗿𝗼𝘂𝗽❱", url=f"https://t.me/{SUPPORT_GROUP}")
                 ],[
                     InlineKeyboardButton(
-                        "❰𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀❱", url=f"https://bit.ly/armybottelegram")
+                        "❰𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀❱", url=f"https://telegra.ph/Army-music-commanda-11-02")
                 ]
             ]
         ),
@@ -105,7 +105,7 @@ def map(pos):
             [InlineKeyboardButton("❰𝗔𝗱𝗱 𝗺𝗲 𝘁𝗼 𝘆𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽❱", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
             [InlineKeyboardButton(text = '❰𝗢𝘄𝗻𝗲𝗿❱', url=f"https://t.me/army0071"),
              InlineKeyboardButton(text = '❰𝗚𝗿𝗼𝘂𝗽❱', url=f"https://t.me/{SUPPORT_GROUP}")],
-            [InlineKeyboardButton(text = '❰𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀❱', url=f"https://bit.ly/armybottelegram")],
+            [InlineKeyboardButton(text = '❰𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀❱', url=f"https://telegra.ph/Army-music-commanda-11-02")],
             [InlineKeyboardButton(text = '◀️', callback_data = f"help+{pos-1}")]
         ]
     else:
