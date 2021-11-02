@@ -21,9 +21,7 @@ from StreamMusic.config import PROJECT_NAME
 from StreamMusic.config import SUPPORT_GROUP
 from StreamMusic.config import UPDATES_CHANNEL
 class Messages():
-      START_MSG = "**Hey, I'm ᴀʀᴍʏ Music 🎀
-I Cᴀɴ Pʟᴀʏ Mᴜsɪᴄ Iɴ Yᴏᴜʀ Gʀᴏᴜᴩ Vᴏɪᴄᴇ Cʜᴀᴛ. Dᴇᴠᴇʟᴏᴩᴇᴅ Bʏ @army0071.
-Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴩ Aɴᴅ Pʟᴀʏ Mᴜsɪᴄ Fʀᴇᴇʟʏ!.✌️\n\n 𝗦𝗲𝗻𝗱 𝗺𝗲 /help 𝗳𝗼𝗿 𝗺𝗼𝗿𝗲 𝗶𝗻𝗳𝗼."
+      START_MSG = "**Hey,  👋 [{}](tg://user?id={})!**\n\n🤖 I'm ᴀʀᴍʏ Music 🎀 I Cᴀɴ Pʟᴀʏ Mᴜsɪᴄ Iɴ Yᴏᴜʀ Gʀᴏᴜᴩ Vᴏɪᴄᴇ Cʜᴀᴛ..\n\n ☺️ Send me /help for more info."
       HELP_MSG = [
         ".",
 f"""
